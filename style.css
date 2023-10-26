@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include border in dimensions */
+}
+
+#grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.grid-cell {
+    width: calc(100vw / 16);
+    height: calc(100vh / 16);
+    background-color: red;
+    border: 1px solid blue;
+}
