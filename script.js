@@ -7,11 +7,11 @@ const createGrid = (gridSize) => {
         gridContainer.appendChild(gridCell);
 
         gridCell.addEventListener('mouseenter', () => {
-            gridCell.style.backgroundColor = 'yellow';
+            gridCell.classList.add('grid-cell-active')
         })
 
         gridCell.addEventListener('mouseleave', () => {
-            gridCell.style.backgroundColor = 'red';
+            gridCell.classList.remove('grid-cell-active');
         })
     }
 }
